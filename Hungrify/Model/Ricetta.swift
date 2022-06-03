@@ -1,6 +1,6 @@
 //
 //  Ricetta.swift
-//  Foodify
+//  Hungrify
 //
 //  Created by Antonio Scognamiglio on 23/11/21.
 //

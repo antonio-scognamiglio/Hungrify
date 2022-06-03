@@ -1,6 +1,6 @@
 //
 //  FavoriteTabView.swift
-//  Foodify
+//  Hungrify
 //
 //  Created by Antonio Scognamiglio on 22/11/21.
 // Questa è la nostra barra dei preferiti, diciamo quel rettangolo, lo scopo è riutilizzarlo, cambiando il nome e l'immagine a seconda del contenuto

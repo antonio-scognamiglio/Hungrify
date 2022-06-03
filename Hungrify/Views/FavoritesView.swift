@@ -1,6 +1,6 @@
 //
 //  FavoritesView.swift
-//  Foodify
+//  Hungrify
 //
 //  Created by Antonio Scognamiglio on 22/11/21.
 //

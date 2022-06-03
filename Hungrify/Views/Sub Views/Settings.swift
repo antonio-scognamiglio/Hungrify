@@ -1,3 +1,10 @@
+//
+//  Settings.swift
+//  Hungrify
+//
+//  Created by Antonio Scognamiglio on 20/11/21.
+//
+
 import SwiftUI
 
 struct Settings: View {

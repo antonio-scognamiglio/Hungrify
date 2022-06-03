@@ -1,6 +1,6 @@
 //
 //  OnBoardingView.swift
-//  Foodify
+//  Hungrify
 //
 //  Created by Antonio Scognamiglio on 20/11/21.
 //
