@@ -1,6 +1,6 @@
 //
 //  FoodifyApp.swift
-//  Foodify
+//  Hungrify
 //
 //  Created by Antonio Scognamiglio on 19/11/21.
 //
