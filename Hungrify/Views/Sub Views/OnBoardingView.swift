@@ -10,7 +10,7 @@ import SwiftUI
 struct OnBoardingView: View {
     
     @Binding var shouldShowOnBoarding: Bool
-    //in pratica questo binding significa chee la variabile shouldShowOnBoarding è legata a qualcosa che non è presente qui ma è dello stesso tipo, cioè bool, in poche parole serve per far comunicare diverse View se ho capito bene, e si dovrebbe collegare alla @State var shouldShowOnBoarding che si trova nella RecipesView, se ho capito bene il nome non è importante basta che sono dello stesso tipo
+    //in pratica questo binding significa che la variabile shouldShowOnBoarding è legata a qualcosa che non è presente qui ma è dello stesso tipo, cioè bool, in poche parole serve per far comunicare diverse View se ho capito bene, e si dovrebbe collegare alla @State var shouldShowOnBoarding che si trova nella RecipesView, se ho capito bene il nome non è importante basta che sono dello stesso tipo
     
     var body: some View {
         VStack(spacing: 90){

@@ -11,20 +11,18 @@ struct FavoritesView: View {
     
     var body: some View {
         NavigationView {
-        VStack(spacing: 30){
-        BarraPreferiti(immagine: "BananaBread", testoImmagine: "Banana Bread")
-        BarraPreferiti(immagine: "Insalata", testoImmagine: "Vegetable Salad")
-        
-            BarraPreferiti(immagine: "CurryRice", testoImmagine: "Curry Rice")
-            
-        BarraPreferiti(immagine: "PancakeProteico", testoImmagine: "Pancake Proteico")
-    }.navigationTitle("Favorites")
-                .navigationBarItems(trailing: NavigationLink(destination: Settings()) {
-                    Image(systemName: "slider.horizontal.3").foregroundColor(Color(UIColor(named: "RossoLabel")!))
-                    
-                    }
-
-                )
+            VStack(spacing: 30){
+                BarraPreferiti(immagine: "BananaBread", testoImmagine: "Banana Bread")
+                BarraPreferiti(immagine: "Insalata", testoImmagine: "Vegetable Salad")
+                BarraPreferiti(immagine: "CurryRice", testoImmagine: "Curry Rice")
+                BarraPreferiti(immagine: "PancakeProteico", testoImmagine: "Pancake Proteico")
+            }
+            .navigationTitle("Favorites")
+            .navigationBarItems(trailing: NavigationLink(destination: Settings()) {
+                Image(systemName: "slider.horizontal.3").foregroundColor(Color(UIColor(named: "RossoLabel")!))
+                
+            }
+            )
         }
     }
 }
