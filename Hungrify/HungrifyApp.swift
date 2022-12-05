@@ -13,7 +13,7 @@ struct HungrifyApp: App {
     var body: some Scene {
         
         WindowGroup {
-            TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+            TabView {
                 RecipesView().tabItem {
                     Image(uiImage: UIImage(named: "fork.knife.circle.fill")!)
 //                    Image(systemName: "fork.knife.circle.fill") //solo su iOS 15 è disponibile di sistema, quindi l'ho passata come immagine

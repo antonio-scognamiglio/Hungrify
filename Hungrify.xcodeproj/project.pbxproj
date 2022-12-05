@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711AE91C293E3DA500D00028 /* Prova.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711AE91B293E3DA500D00028 /* Prova.swift */; };
 		71DB6E3F274BA7DA000DB4AF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6E3E274BA7DA000DB4AF /* Settings.swift */; };
 		71DB6E41274C1B86000DB4AF /* BarraPreferiti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6E40274C1B86000DB4AF /* BarraPreferiti.swift */; };
 		71DB6E44274C276F000DB4AF /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6E43274C276F000DB4AF /* FavoritesView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711AE91B293E3DA500D00028 /* Prova.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prova.swift; sourceTree = "<group>"; };
 		71DB6E3E274BA7DA000DB4AF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		71DB6E40274C1B86000DB4AF /* BarraPreferiti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarraPreferiti.swift; sourceTree = "<group>"; };
 		71DB6E43274C276F000DB4AF /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				71DB6E46274CDFAD000DB4AF /* RandomRecipeView.swift */,
 				71DB6E48274D0875000DB4AF /* FullRecipe.swift */,
+				711AE91B293E3DA500D00028 /* Prova.swift */,
 				71FBDCD727491DF000398E07 /* OnBoardingView.swift */,
 				71DB6E3E274BA7DA000DB4AF /* Settings.swift */,
 			);
@@ -198,6 +201,7 @@
 			files = (
 				71DB6E4B274D25A1000DB4AF /* Ricetta.swift in Sources */,
 				71DB6E49274D0875000DB4AF /* FullRecipe.swift in Sources */,
+				711AE91C293E3DA500D00028 /* Prova.swift in Sources */,
 				71DB6E41274C1B86000DB4AF /* BarraPreferiti.swift in Sources */,
 				71FBDCD827491DF000398E07 /* OnBoardingView.swift in Sources */,
 				71FBDCCC274801B600398E07 /* RecipesView.swift in Sources */,
