@@ -24,19 +24,16 @@ struct FullRecipe: View {
 					.scaledToFill()
 				
 					HStack{
-						
-						//                    tentativo di uso della funzione che restituisce un numero random basato sulla grandezza dell'array
-						//
-						Text(ricettaStore.arrayRicette[indiceRicetta].recipeName)
+                        Text(ricettaStore.arrayRicette[indiceRicetta].recipeName)
 							.foregroundColor(.black)
 							.font(.system(size: 30))
 							.fontWeight(.semibold)
-							.padding(.horizontal)
-							.frame(width: 350, alignment: .leading)
+						Spacer()
 						Image(systemName: "heart.fill")
 							.foregroundColor(Color(UIColor(named: "RossoLabel")!))
 							.font(.system(size: 30))
 					}
+                    .frame(width: UIScreen.main.bounds.width * 0.9)
 					.padding(.top, 15)
 				
 					VStack (alignment: .leading){
@@ -76,10 +73,9 @@ struct FullRecipe: View {
 								.fontWeight(.regular)
 								.padding(.top,1)
 						}
-						}.padding(.horizontal)
+						}
 					}
-					.padding(.horizontal)
-				
+                    .frame(width: UIScreen.main.bounds.width * 0.9)
 			}
 				}
 		.navigationBarTitleDisplayMode(.inline)
