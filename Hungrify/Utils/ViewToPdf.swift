@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-@MainActor func render(view: some View) -> URL {
+func render(view: some View) async -> URL {
     // 1: Render Hello World with some modifiers
-    let renderer = ImageRenderer (
+    let renderer = await ImageRenderer (
         content: view
             .scaledToFit()
     )
@@ -18,7 +18,7 @@ import SwiftUI
     let url = URL.documentsDirectory.appending(path: "output.pdf")
     
     // 3: Start the rendering process
-    renderer.render { size, context in
+    await renderer.render { size, context in
         // 4: Tell SwiftUI our PDF should be the same size as the views we're rendering
         var box = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         
