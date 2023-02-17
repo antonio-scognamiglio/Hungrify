@@ -10,7 +10,7 @@ import SwiftUI
 struct FullRecipeNoScroll: View {
     @StateObject var ricettaStore = RicettaStore()
     @State var indiceRicetta: Int
-    @State var pdfUrl: URL?
+ 
     
     var body: some View {
             VStack {
@@ -73,21 +73,6 @@ struct FullRecipeNoScroll: View {
                 }
                 .frame(width: UIScreen.main.bounds.width * 0.9)
             }
-        .task {
-            let url = await render(view: self)
-            if pdfUrl == nil {
-                pdfUrl = url
-                print("*****************")
-                print(pdfUrl!)
-            }
-        }
-        .toolbar {
-            ToolbarItem {
-                if pdfUrl != nil {
-                    ShareLink(item: pdfUrl!)
-                }
-            }
-        }
     }
 }
 

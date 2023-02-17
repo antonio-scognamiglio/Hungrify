@@ -73,7 +73,7 @@ struct RandomRecipe: View {
 							Text("\(ricettaStore.arrayRicette[indiceRicetta].cookingTime) min")
 								.foregroundColor(.secondary)
 							
-                            NavigationLink(destination: FullRecipeNoScroll(indiceRicetta: indiceRicetta)) {
+                            NavigationLink(destination: FullRecipe(indiceRicetta: indiceRicetta)) {
 								ZStack{
 									RoundedRectangle(cornerRadius: 10)
 										.foregroundColor((Color(UIColor(named: ("RossoButton"))!)))

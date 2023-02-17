@@ -63,18 +63,6 @@
 			path = "Created Components";
 			sourceTree = "<group>";
 		};
-		71DB6E45274C2785000DB4AF /* Sub Views */ = {
-			isa = PBXGroup;
-			children = (
-				71DB6E46274CDFAD000DB4AF /* RandomRecipeView.swift */,
-				71DB6E48274D0875000DB4AF /* FullRecipeView.swift */,
-				71F3911C299FF81D001EA86D /* FullRecipeNoScrollView.swift */,
-				71FBDCD727491DF000398E07 /* OnBoardingView.swift */,
-				71DB6E3E274BA7DA000DB4AF /* Settings.swift */,
-			);
-			path = "Sub Views";
-			sourceTree = "<group>";
-		};
 		71F3911B299FF76E001EA86D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +113,11 @@
 			children = (
 				71FBDCCB274801B600398E07 /* RecipesView.swift */,
 				71DB6E43274C276F000DB4AF /* FavoritesView.swift */,
-				71DB6E45274C2785000DB4AF /* Sub Views */,
+				71DB6E46274CDFAD000DB4AF /* RandomRecipeView.swift */,
+				71DB6E48274D0875000DB4AF /* FullRecipeView.swift */,
+				71F3911C299FF81D001EA86D /* FullRecipeNoScrollView.swift */,
+				71FBDCD727491DF000398E07 /* OnBoardingView.swift */,
+				71DB6E3E274BA7DA000DB4AF /* Settings.swift */,
 				71DB6E42274C26C3000DB4AF /* Created Components */,
 			);
 			path = Views;
