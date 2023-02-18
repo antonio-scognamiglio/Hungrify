@@ -33,7 +33,6 @@
 		71DB6E4C274D25B7000DB4AF /* RicettaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicettaStore.swift; sourceTree = "<group>"; };
 		71F3911C299FF81D001EA86D /* FullRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRecipeView.swift; sourceTree = "<group>"; };
 		71F3911E29A0DEC5001EA86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		71F3911F29A0EE80001EA86D /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		71FBDCC6274801B600398E07 /* Hungrify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hungrify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FBDCC9274801B600398E07 /* HungrifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HungrifyApp.swift; sourceTree = "<group>"; };
 		71FBDCCB274801B600398E07 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
@@ -97,7 +96,6 @@
 				71F3911B299FF76E001EA86D /* Utils */,
 				71FBDCCD274801B800398E07 /* Assets.xcassets */,
 				71FBDCCF274801B800398E07 /* Preview Content */,
-				71F3911F29A0EE80001EA86D /* ReadMe.md */,
 			);
 			path = Hungrify;
 			sourceTree = "<group>";
