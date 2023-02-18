@@ -14,7 +14,7 @@
 		71DB6E47274CDFAD000DB4AF /* RandomRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6E46274CDFAD000DB4AF /* RandomRecipeView.swift */; };
 		71DB6E4B274D25A1000DB4AF /* Ricetta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6E4A274D25A1000DB4AF /* Ricetta.swift */; };
 		71DB6E4D274D25B7000DB4AF /* RicettaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6E4C274D25B7000DB4AF /* RicettaStore.swift */; };
-		71F3911D299FF81D001EA86D /* FullRecipeNoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3911C299FF81D001EA86D /* FullRecipeNoScrollView.swift */; };
+		71F3911D299FF81D001EA86D /* FullRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3911C299FF81D001EA86D /* FullRecipeView.swift */; };
 		71FBDCCA274801B600398E07 /* HungrifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FBDCC9274801B600398E07 /* HungrifyApp.swift */; };
 		71FBDCCC274801B600398E07 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FBDCCB274801B600398E07 /* RecipesView.swift */; };
 		71FBDCCE274801B800398E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FBDCCD274801B800398E07 /* Assets.xcassets */; };
@@ -31,7 +31,7 @@
 		71DB6E46274CDFAD000DB4AF /* RandomRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRecipeView.swift; sourceTree = "<group>"; };
 		71DB6E4A274D25A1000DB4AF /* Ricetta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ricetta.swift; sourceTree = "<group>"; };
 		71DB6E4C274D25B7000DB4AF /* RicettaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicettaStore.swift; sourceTree = "<group>"; };
-		71F3911C299FF81D001EA86D /* FullRecipeNoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRecipeNoScrollView.swift; sourceTree = "<group>"; };
+		71F3911C299FF81D001EA86D /* FullRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRecipeView.swift; sourceTree = "<group>"; };
 		71F3911E29A0DEC5001EA86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		71F3911F29A0EE80001EA86D /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		71FBDCC6274801B600398E07 /* Hungrify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hungrify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +116,7 @@
 				71FBDCCB274801B600398E07 /* RecipesView.swift */,
 				71DB6E43274C276F000DB4AF /* FavoritesView.swift */,
 				71DB6E46274CDFAD000DB4AF /* RandomRecipeView.swift */,
-				71F3911C299FF81D001EA86D /* FullRecipeNoScrollView.swift */,
+				71F3911C299FF81D001EA86D /* FullRecipeView.swift */,
 				71FBDCD727491DF000398E07 /* OnBoardingView.swift */,
 				71DB6E3E274BA7DA000DB4AF /* Settings.swift */,
 				71DB6E42274C26C3000DB4AF /* Created Components */,
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71DB6E4B274D25A1000DB4AF /* Ricetta.swift in Sources */,
-				71F3911D299FF81D001EA86D /* FullRecipeNoScrollView.swift in Sources */,
+				71F3911D299FF81D001EA86D /* FullRecipeView.swift in Sources */,
 				711AE91C293E3DA500D00028 /* ViewToPdf.swift in Sources */,
 				71DB6E41274C1B86000DB4AF /* BarraPreferiti.swift in Sources */,
 				71FBDCD827491DF000398E07 /* OnBoardingView.swift in Sources */,

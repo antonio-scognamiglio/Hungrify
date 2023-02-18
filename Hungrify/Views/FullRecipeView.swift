@@ -13,15 +13,16 @@ struct FullRecipeView: View {
     @State var imageFromView: Image? = nil
     @State var pdfUrl: URL?
     
-    // Questa sotto, sostanzialmente è la view che sarà convertita prima in image e poi in pdf
-    // Proprio Paul suggerisce di creare la View come property
+    // Questa sotto, sostanzialmente è la view che sarà convertita prima in image e poi in pdf, questo approccio, serve per via della Scroll View, altrimenti, le dimensioni del PDF non sono mai reali quando prova a prenderli dalla Scroll View e qualcosa viene tagliato
+    // Si può anche evitare di fare in questo modo e fare tutto in una view, utilizzando la funzione snap sulla view stessa self.snapshot(), ma questo è un easy fix alla scroll View
     var myView: some View {
             VStack {
                 Image(uiImage: UIImage(named: ricettaStore.arrayRicette[indiceRicetta].imageName)!)
                     .resizable()
-                    .frame(width: 420, height: 240)
+                // questo frame è importante perché l'immagine nonostante il frame al Vstack, durante la cattura con snapshot, esce sgranata, resizata male
+                    .frame(width: UIScreen.main.bounds.width * 0.95, height: 240)
                     .scaledToFill()
-                
+
                 HStack{
                     Text(ricettaStore.arrayRicette[indiceRicetta].recipeName)
                         .foregroundColor(.black)
@@ -33,7 +34,6 @@ struct FullRecipeView: View {
                         .foregroundColor(Color(UIColor(named: "RossoLabel")!))
                         .font(.system(size: 30))
                 }
-                .frame(width: UIScreen.main.bounds.width * 0.9)
                 .padding(.top, 15)
                 
                 VStack (alignment: .leading){
@@ -72,41 +72,39 @@ struct FullRecipeView: View {
                             .fontWeight(.regular)
                             .padding(.top,1)
                     }
-                    
                 }
-                .frame(width: UIScreen.main.bounds.width * 0.9)
             }
+            .frame(width: UIScreen.main.bounds.width * 0.95)
+        
     }
     
-    // solo il body si vede nell'app, quindi questo è ciò che lo user vede
     var body: some View {
-        VStack {
-            ScrollView {
-                myView
-            }
-        }
-        .task {
-            if pdfUrl == nil {
-                if imageFromView == nil {
-                    imageFromView = Image(uiImage: myView.snapshot())
-                }
-                pdfUrl = await render(view: imageFromView)
-                print("*************Test dell'Url*************")
-                print(pdfUrl!)
-            }
-        }
-            .toolbar {
-                ToolbarItem {
-                    if pdfUrl != nil {
-                        ShareLink(item: pdfUrl!)
+        ScrollView {
+            myView
+                .task {
+                    if pdfUrl == nil {
+                        if imageFromView == nil {
+                            imageFromView = Image(uiImage: myView.snapshot())
+                        }
+                        pdfUrl = await render(view: imageFromView)
+                        print("*************Test dell'Url*************")
+                        print(pdfUrl!)
                     }
                 }
-            }
+                .toolbar {
+                    ToolbarItem {
+                        if pdfUrl != nil {
+                            ShareLink(item: pdfUrl!)
+                        }
+                    }
+                }
+                .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
 
-struct FullRecipeNoScroll_Previews: PreviewProvider {
+struct FullRecipe_Previews: PreviewProvider {
     static var previews: some View {
         FullRecipeView(indiceRicetta: 2).environmentObject(RicettaStore())
         
