@@ -1,5 +1,5 @@
 //
-//  FullRecipeNoScroll.swift
+//  FullRecipeView.swift
 //  Hungrify
 //
 //  Created by Antonio Scognamiglio on 17/02/23.
@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct FullRecipeNoScroll: View {
+struct FullRecipeView: View {
     @StateObject var ricettaStore = RicettaStore()
     @State var indiceRicetta: Int
- 
+    @State var imageFromView: Image? = nil
+    @State var pdfUrl: URL?
     
-    var body: some View {
+    // Questa sotto, sostanzialmente è la view che sarà convertita prima in image e poi in pdf
+    // Proprio Paul suggerisce di creare la View come property
+    var myView: some View {
             VStack {
                 Image(uiImage: UIImage(named: ricettaStore.arrayRicette[indiceRicetta].imageName)!)
                     .resizable()
@@ -74,12 +77,38 @@ struct FullRecipeNoScroll: View {
                 .frame(width: UIScreen.main.bounds.width * 0.9)
             }
     }
+    
+    // solo il body si vede nell'app, quindi questo è ciò che lo user vede
+    var body: some View {
+        VStack {
+            ScrollView {
+                myView
+            }
+        }
+        .task {
+            if pdfUrl == nil {
+                if imageFromView == nil {
+                    imageFromView = Image(uiImage: myView.snapshot())
+                }
+                pdfUrl = await render(view: imageFromView)
+                print("*************Test dell'Url*************")
+                print(pdfUrl!)
+            }
+        }
+            .toolbar {
+                ToolbarItem {
+                    if pdfUrl != nil {
+                        ShareLink(item: pdfUrl!)
+                    }
+                }
+            }
+    }
 }
 
 
 struct FullRecipeNoScroll_Previews: PreviewProvider {
     static var previews: some View {
-        FullRecipeNoScroll(indiceRicetta: 2).environmentObject(RicettaStore())
+        FullRecipeView(indiceRicetta: 2).environmentObject(RicettaStore())
         
     }
 }
