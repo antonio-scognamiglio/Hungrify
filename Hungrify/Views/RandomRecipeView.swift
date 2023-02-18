@@ -13,8 +13,8 @@ struct RandomRecipe: View {
 	@State var indiceRicetta: Int = 0
 	
 	var body: some View {
-		VStack{
-			ZStack{
+		VStack {
+			ZStack {
 				Image(uiImage: UIImage(named: ricettaStore.arrayRicette[indiceRicetta].imageName)!)
 					.resizable()
 					.scaledToFill()
@@ -73,8 +73,8 @@ struct RandomRecipe: View {
 							Text("\(ricettaStore.arrayRicette[indiceRicetta].cookingTime) min")
 								.foregroundColor(.secondary)
 							
-							NavigationLink(destination: FullRecipe(indiceRicetta: $indiceRicetta)) {
-								ZStack{
+                            NavigationLink(destination: FullRecipeView(indiceRicetta: indiceRicetta)) {
+								ZStack {
 									RoundedRectangle(cornerRadius: 10)
 										.foregroundColor((Color(UIColor(named: ("RossoButton"))!)))
 									

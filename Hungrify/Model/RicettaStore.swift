@@ -15,15 +15,6 @@ class RicettaStore: ObservableObject {
     @Published var arrayRicette: [Ricetta] = [ricetta1, ricetta2, ricetta3, ricetta4, ricetta5, ricetta6, ricetta7, ricetta8, ricetta9, ricetta10] // nelle classi si inizializza sempre, oppure ci vuole un costruttore -> init
     //    dove sta ricetta 1 devono essere inserite tutte le ricette, diciamo il database di ricette
     
-    //
-    //    func randomRecipe ()  -> Ricetta {
-    //        var posizioneRandomRicetta: Int
-    //        let indiceElementi = arrayRicette.count
-    //        posizioneRandomRicetta = Int.random(in: 0..<indiceElementi)
-    //        return arrayRicette[posizioneRandomRicetta]
-    //
-    //    }
-    
     
     func randomRecipe ()  -> Int {
         var posizioneRandomRicetta: Int
