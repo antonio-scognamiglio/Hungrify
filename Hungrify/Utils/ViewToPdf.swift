@@ -43,7 +43,7 @@ func render(view: some View) async -> URL {
 }
 
 
-//If you need to target iOS 15 and below
+//If you need to target iOS 15 and below, so if ImageRenderer is not available
 extension View {
     func snapshot() -> UIImage {
         let controller = UIHostingController(rootView: self)

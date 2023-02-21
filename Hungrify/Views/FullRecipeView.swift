@@ -10,7 +10,7 @@ import SwiftUI
 struct FullRecipeView: View {
     @StateObject var ricettaStore = RicettaStore()
     @State var indiceRicetta: Int
-    @State var imageFromView: Image? = nil
+//    @State var imageFromView: Image? = nil
     @State var pdfUrl: URL?
     
     // Questa sotto, sostanzialmente è la view che sarà convertita prima in image e poi in pdf, questo approccio, serve per via della Scroll View, altrimenti, le dimensioni del PDF non sono mai reali quando prova a prenderli dalla Scroll View e qualcosa viene tagliato
@@ -83,10 +83,7 @@ struct FullRecipeView: View {
             myView
                 .task {
                     if pdfUrl == nil {
-                        if imageFromView == nil {
-                            imageFromView = Image(uiImage: myView.snapshot())
-                        }
-                        pdfUrl = await render(view: imageFromView)
+                        pdfUrl = await render(view: myView)
                         print("*************Test dell'Url*************")
                         print(pdfUrl!)
                     }
