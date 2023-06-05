@@ -2,6 +2,7 @@
 [![](https://img.shields.io/badge/iOS-15.0-orange)](#)
 [![](https://img.shields.io/badge/Platforms-iPhone-blue)](#)
 [![](https://img.shields.io/badge/Category-Food-brightgreen)](#)
+[![](https://img.shields.io/badge/Technologies-SwiftUI%20%7C%20ImageRenderer-yellow)](#)
 
 ---
 This app is designed to help people who are often busy and do not have much time to spend in the kitchen. 
